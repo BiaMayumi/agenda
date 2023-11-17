@@ -24,7 +24,7 @@
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o número de celular" value="<?= $contact['phone'] ?>" required>
       </div>
       <div class="form-group">
-        <label for="cpf">CPF:</label>
+        <label for="CPF">CPF:</label>
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o CPF" value="<?= $contact['phone'] ?>" required>
       </div>
       <div class="form-group">

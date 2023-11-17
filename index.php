@@ -22,9 +22,11 @@
         <tbody>
           <?php foreach($contacts as $contact): ?>
             <tr>
-              <td scope="row" class="col-id"><?= $contact["id"] ?></td>
-              <td scope="row"><?= $contact["name"] ?></td>
-              <td scope="row"><?= $contact["phone"] ?></td>
+              <td scope="row"><?= $contact["Nome"] ?></td>
+              <td scope="row"><?= $contact["Endereco"] ?></td>
+              <td scope="row"><?= $contact["Telefone"] ?></td>
+              <td scope="row"><?= $contact["Celular"] ?></td>
+              <td scope="row"><?= $contact["CPF"] ?></td>
               <td class="actions">
                 <a href="<?= $BASE_URL ?>show.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>
                 <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact["id"] ?>"><i class="far fa-edit edit-icon"></i></a>

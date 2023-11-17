@@ -15,7 +15,8 @@
 
       $name = $data["name"];
       $phone = $data["phone"];
-      $endereco = $data["endereco"];
+      $cellphone = $data["cellphone"];
+      $endereco = $data["adress"];
       $cpf = $data["cpf"];
       $observations = $data["observations"];
 
