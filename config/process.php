@@ -13,19 +13,22 @@
     // Criar contato
     if($data["type"] === "create") {
 
-      $name = $data["name"];
-      $phone = $data["phone"];
-      $cellphone = $data["cellphone"];
-      $endereco = $data["adress"];
-      $cpf = $data["cpf"];
+      $name = $data["Nome"];
+      $phone = $data["Telefone"];
+      $cellphone = $data["Celular"];
+      $endereco = $data["Endereco"];
+      $cpf = $data["CPF"];
       $observations = $data["observations"];
 
-      $query = "INSERT INTO contacts (name, phone, observations) VALUES (:name, :phone, :observations)";
+      $query = "INSERT INTO contacts (Nome, Endereço, Telefone, Celular, CPF,observations) VALUES (:Nome, :Endereço, :Telefone, :Celular, :CPF, :observations)";
 
       $stmt = $conn->prepare($query);
 
-      $stmt->bindParam(":name", $name);
-      $stmt->bindParam(":phone", $phone);
+      $stmt->bindParam(":Nome", $name);
+      $stmt->bindParam(":Endereo", $adress);
+      $stmt->bindParam(":Telefone", $phone);
+      $stmt->bindParam(":Celular", $cellphone);
+      $stmt->bindParam(":CPF", $cpf);
       $stmt->bindParam(":observations", $observations);
 
       try {
@@ -41,8 +44,11 @@
 
     } else if($data["type"] === "edit") {
 
-      $name = $data["name"];
-      $phone = $data["phone"];
+      $name = $data["Nome"];
+      $adress = $data["Endereco"];
+      $phone = $data["Telefone"];
+      $cellphone = $data["Celular"];
+      $cpf = $data["CPF"];
       $observations = $data["observations"];
       $id = $data["id"];
 
@@ -52,8 +58,11 @@
 
       $stmt = $conn->prepare($query);
 
-      $stmt->bindParam(":name", $name);
-      $stmt->bindParam(":phone", $phone);
+      $stmt->bindParam(":Nome", $name);
+      $stmt->bindParam(":Telefone", $phone);
+      $stmt->bindParam(":Telefone", $phone);
+      $stmt->bindParam(":Celular", $cellphone);
+      $stmt->bindParam(":CPF", $cpf);
       $stmt->bindParam(":observations", $observations);
       $stmt->bindParam(":id", $id);
 
