@@ -16,6 +16,18 @@
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" value="<?= $contact['phone'] ?>" required>
       </div>
       <div class="form-group">
+        <label for="adress">Endereço:</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o Endereço" value="<?= $contact['phone'] ?>" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Celular:</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o número de celular" value="<?= $contact['phone'] ?>" required>
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o CPF" value="<?= $contact['phone'] ?>" required>
+      </div>
+      <div class="form-group">
         <label for="observations">Observações:</label>
         <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Insira as observações" rows="3"><?= $contact['observations'] ?></textarea>
       </div>

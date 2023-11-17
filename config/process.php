@@ -15,6 +15,8 @@
 
       $name = $data["name"];
       $phone = $data["phone"];
+      $endereco = $data["endereco"];
+      $cpf = $data["cpf"];
       $observations = $data["observations"];
 
       $query = "INSERT INTO contacts (name, phone, observations) VALUES (:name, :phone, :observations)";

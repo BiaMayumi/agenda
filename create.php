@@ -12,7 +12,19 @@
       </div>
       <div class="form-group">
         <label for="phone">Telefone do contato:</label>
-        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" required>
+        <input type="number" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" required>
+      </div>
+      <div class="form-group">
+        <label for="adress">Endereço:</label>
+        <input type="text" class="form-control" id="phone" name="adress" placeholder="Digite o Endereço" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Celular:</label>
+        <input type="number" class="form-control" id="phone" name="phone" placeholder="Digite o Celular" required>
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="number" class="form-control" id="phone" name="cpf" placeholder="Digite o CPF" required>
       </div>
       <div class="form-group">
         <label for="observations">Observações:</label>
